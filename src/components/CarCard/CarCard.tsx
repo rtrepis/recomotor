@@ -22,7 +22,7 @@ const CarCard = ({
   const [favorite, setFavorite] = useState(initialFavorite);
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ width: 345 }}>
       <CardMedia
         sx={{ height: 140 }}
         image={image}
