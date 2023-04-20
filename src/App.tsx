@@ -1,15 +1,12 @@
 import React from "react";
-import CarCard from "./components/CarCard/CarCard";
 import { Container } from "@mui/material";
 import carsOfBrands from "./data/carsOfBrands";
+import CarCardList from "./components/CarCardList/CarCardList";
 
 const App = () => {
   return (
     <Container>
-      <CarCard
-        brand={carsOfBrands[0].brand}
-        model={carsOfBrands[0].models[0]}
-      />
+      <CarCardList cars={carsOfBrands} />
     </Container>
   );
 };
